@@ -1,0 +1,17 @@
+{
+  "name": "todoomean",
+  "version": "1.0.0",
+  "description": "This is the demo App",
+  "main": "eServer.js",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "mongoose": "^4.11.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "dharmikbeladiya",
+  "license": "ISC"
+}

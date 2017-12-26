@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DG's ToDo List</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript" src="js/toDoController.js"></script>
+</head>
+<body ng-app="todoApp" ng-controller="todoController">
+<h1>Hello</h1>
+<table >
+	<tr>
+		<td>
+			<input type="text" name="todoWork" placeholder="Work" ng-model="todo.task">
+		</td>
+		<td>
+			<input type="submit" value="Add" ng-click="addItem()"/>
+		</td>
+	</tr>
+</table>
+<table>
+	<tr ng-repeat="x in todoList">
+		<td>{{x.task}}</td>
+		<td><input type="submit" value="Delete" name="deleteTodo" ng-click=removeItem(x.task)></td>
+	</tr>
+</table>
+</body>
+</html>
